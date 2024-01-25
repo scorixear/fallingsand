@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.gif" type="image/gif" >
+    <title>FallingSand</title>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Falling Sand</h1>
+        <div class="details">
+            <div>An implementation of a falling sand CA</div>
+            <a href="https://en.wikipedia.org/wiki/Cellular_automaton">Wikipedia</a>
+            <div>Inspired by TheCodingTrain and his coding challenge 180</div>
+            <a href="https://www.youtube.com/watch?v=diGjw5tghYU">Challenge 180</a>
+        </div>
+        <form id="settings" class="settings">
+            <label for="amount">Size of Sand Brush</label>
+            <input id="amount" type="number" value="5"/>
+            <label for="size">Size of the canvas</label>
+            <input id="size" type="number" value="1200"/>
+            <label for="speed">Number of Calculations per Frame</label>
+            <input id="speed" type="number" value="10"/>
+            <label for="framerate">Number of Frames per Second</label>
+            <input id="framerate" type="number" value="600"/>
+            <button id="submitButton" type="submit">Start</button>
+        </form>
+    </header>
+    <main>
+        <canvas id="canvas"></canvas>
+    </main>
+</body>
+<script src="index.js" type="module"></script>
+</html>
